@@ -1,0 +1,13 @@
+# Simple link.
+quiz.admin.quiztools:
+  title: Quiztools
+  route_name: quiz.admin.quiztools
+  parent: quiz.admin
+  weight: 3
+
+quiztools.importer_multichoice.admin:
+  title: Importer MultiChoice
+  description: Importer MultiChoice Question form CSV.
+  parent: quiz.admin.quiztools
+  route_name: quiztools.importer_multichoice
+  weight: 10

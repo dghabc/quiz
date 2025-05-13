@@ -1,0 +1,15 @@
+quiztools.importer_multichoice:
+  path: '/admin/quiz/quiztools/importer-multichoice'
+  defaults:
+    _title: 'Importer Multichoice'
+    _form: 'Drupal\quiztools\Form\ImporterMultichoiceForm'
+  requirements:
+    _permission: 'administer quiz'
+
+quiz.admin.quiztools:
+  path: '/admin/quiz/quiztools'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Quiztools'
+  requirements:
+    _permission: 'administer quiz'

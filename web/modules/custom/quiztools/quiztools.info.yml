@@ -1,0 +1,8 @@
+name: 'quiztools'
+type: module
+description: 'quiz tools'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:quiz
+  - drupal:csv_importer
