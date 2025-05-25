@@ -85,7 +85,7 @@ final class ImporterMultichoiceForm extends FormBase {
       '#upload_validators' => [
         'FileExtension' => ['extensions' => 'csv'],
       ],
-      '#upload_location' => 'private://quiztools_csv_import/',  // 恢复私有文件路径
+      '#upload_location' => 'public://quiztools_csv_import/',  // Changed to public file path
       '#autoupload' => TRUE, // 显式开启自动上传
     ];
 
