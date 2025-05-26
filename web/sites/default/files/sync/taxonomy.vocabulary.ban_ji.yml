@@ -1,0 +1,9 @@
+uuid: 72037c9d-45ab-492d-a669-8c214bf5e153
+langcode: en
+status: true
+dependencies: {  }
+name: 班级
+vid: ban_ji
+description: 针对学生的分班
+weight: 0
+new_revision: false

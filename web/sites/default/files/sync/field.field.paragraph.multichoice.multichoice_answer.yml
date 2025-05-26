@@ -1,0 +1,27 @@
+uuid: bfca22fd-0a3e-4d31-a1a8-292d133b18c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.multichoice_answer
+    - paragraphs.paragraphs_type.multichoice
+  module:
+    - text
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: jeibTmsHfu6_-uftPha74Dt8IkW_liSWTGhfFEnPThc
+id: paragraph.multichoice.multichoice_answer
+field_name: multichoice_answer
+entity_type: paragraph
+bundle: multichoice
+label: Answer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

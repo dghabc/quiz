@@ -1,0 +1,27 @@
+uuid: f2088916-339b-4145-af7b-b90075c4c245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.multichoice_feedback_chosen
+    - paragraphs.paragraphs_type.multichoice
+  module:
+    - text
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: vC4MexGa42_g1gUQ7uQPxOJaiemcKxL3Dkc9d1QutXo
+id: paragraph.multichoice.multichoice_feedback_chosen
+field_name: multichoice_feedback_chosen
+entity_type: paragraph
+bundle: multichoice
+label: 'Feedback if chosen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,30 @@
+uuid: be497c15-b10d-430e-aaf2-cd0f1f8a7b1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_bj
+    - taxonomy.vocabulary.ban_ji
+  module:
+    - user
+id: user.user.field_bj
+field_name: field_bj
+entity_type: user
+bundle: user
+label: bj
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ban_ji: ban_ji
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

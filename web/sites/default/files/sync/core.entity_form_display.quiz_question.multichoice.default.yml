@@ -1,0 +1,92 @@
+uuid: 07c17d63-5c0a-41b4-b0d9-df925c0cbef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.quiz_question.multichoice.alternatives
+    - field.field.quiz_question.multichoice.choice_boolean
+    - field.field.quiz_question.multichoice.choice_multi
+    - field.field.quiz_question.multichoice.choice_random
+    - field.field.quiz_question.multichoice.field_zsd
+    - quiz.question.type.multichoice
+  module:
+    - paragraphs
+    - text
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: a6Z-5R5FZpCo39H_DYKGmHP-APPUpJ_erU6JTgpYXFA
+id: quiz_question.multichoice.default
+targetEntityType: quiz_question
+bundle: multichoice
+mode: default
+content:
+  alternatives:
+    type: entity_reference_paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: alternative
+      title_plural: Alternatives
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: multichoice
+    third_party_settings: {  }
+  body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  choice_boolean:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  choice_multi:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  choice_random:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  feedback:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_zsd:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

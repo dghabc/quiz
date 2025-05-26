@@ -1,0 +1,77 @@
+uuid: 9fc054d7-fb85-419e-9122-439500c9fa47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multichoice.multichoice_answer
+    - field.field.paragraph.multichoice.multichoice_correct
+    - field.field.paragraph.multichoice.multichoice_feedback_chosen
+    - field.field.paragraph.multichoice.multichoice_feedback_not_chosen
+    - field.field.paragraph.multichoice.multichoice_score_chosen
+    - field.field.paragraph.multichoice.multichoice_score_not_chosen
+    - paragraphs.paragraphs_type.multichoice
+  module:
+    - text
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: ThGUUVDK1SRFR7IIvgxVftjs7k2Xmt8jGLRtk4dSol8
+id: paragraph.multichoice.default
+targetEntityType: paragraph
+bundle: multichoice
+mode: default
+content:
+  multichoice_answer:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  multichoice_correct:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  multichoice_feedback_chosen:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  multichoice_feedback_not_chosen:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  multichoice_score_chosen:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  multichoice_score_not_chosen:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

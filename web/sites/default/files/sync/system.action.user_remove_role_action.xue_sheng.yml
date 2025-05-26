@@ -1,0 +1,14 @@
+uuid: 375ecfb3-52b8-4035-8935-711013579c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.xue_sheng
+  module:
+    - user
+id: user_remove_role_action.xue_sheng
+label: 'Remove the 学生 role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: xue_sheng

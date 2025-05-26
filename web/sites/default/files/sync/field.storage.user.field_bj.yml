@@ -1,0 +1,20 @@
+uuid: 72bb4165-c2b0-4fd6-91a1-f7f1c82e1fe9
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_bj
+field_name: field_bj
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

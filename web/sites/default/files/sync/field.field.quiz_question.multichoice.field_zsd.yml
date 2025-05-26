@@ -1,0 +1,29 @@
+uuid: 26fc5ff6-1abd-4ce3-9ea7-d1c05fbef7a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.quiz_question.field_zsd
+    - quiz.question.type.multichoice
+    - taxonomy.vocabulary.zhi_shi_dian
+id: quiz_question.multichoice.field_zsd
+field_name: field_zsd
+entity_type: quiz_question
+bundle: multichoice
+label: zsd
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      zhi_shi_dian: zhi_shi_dian
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

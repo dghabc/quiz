@@ -1,0 +1,9 @@
+uuid: ba07fc39-e8be-4663-8d27-7bc65b7d2e90
+langcode: en
+status: true
+dependencies: {  }
+name: 知识点
+vid: zhi_shi_dian
+description: 各项测试内容的分属知识点
+weight: 0
+new_revision: false

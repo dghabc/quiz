@@ -1,0 +1,11 @@
+uuid: 4db2e12a-6195-49d6-96ca-8e18b896dbf0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: by-OfM197W9H_TIiyS1Hd9J8ktqiuXQgnyZjujMV1Dk
+id: multichoice
+label: 'Multiple choice response'

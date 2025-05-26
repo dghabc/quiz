@@ -1,0 +1,47 @@
+uuid: 4e0ad5c3-d10f-412a-a4ab-6de653ec8c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.quiz_question.multichoice.alternatives
+    - field.field.quiz_question.multichoice.choice_boolean
+    - field.field.quiz_question.multichoice.choice_multi
+    - field.field.quiz_question.multichoice.choice_random
+    - field.field.quiz_question.multichoice.field_zsd
+    - quiz.question.type.multichoice
+  module:
+    - text
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: WeXHFnGDNdBHSxJ0_FE4qTWEUzamRkoNdDU1rvknJCw
+id: quiz_question.multichoice.default
+targetEntityType: quiz_question
+bundle: multichoice
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_zsd:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  alternatives: true
+  choice_boolean: true
+  choice_multi: true
+  choice_random: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_choices: true

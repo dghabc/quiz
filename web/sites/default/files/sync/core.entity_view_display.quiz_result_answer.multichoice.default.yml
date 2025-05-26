@@ -1,0 +1,37 @@
+uuid: a6d102e8-3dfd-4fbc-a181-04eb4581eb1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.quiz_result_answer.multichoice.multichoice_answer
+    - quiz.result.answer.type.multichoice
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: zhlmis1nEV3GCj28PnkORN3MsE1NkxoHWWhzs7CYPYM
+id: quiz_result_answer.multichoice.default
+targetEntityType: quiz_result_answer
+bundle: multichoice
+mode: default
+content:
+  table:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  answer_feedback: true
+  attempt: true
+  choice: true
+  correct: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  multichoice_answer: true
+  question_feedback: true
+  quiz_feedback: true
+  quiz_question_view_full: true
+  quiz_question_view_question: true
+  score: true
+  solution: true

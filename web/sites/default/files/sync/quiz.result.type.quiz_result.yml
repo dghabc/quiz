@@ -1,0 +1,11 @@
+uuid: 3c8f3867-68f2-4e9e-b56d-f019a6e96686
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+_core:
+  default_config_hash: D5M8FS_5FtdcS2LDKgyVjYD0J3yxIXu__c_Hs0LYtmQ
+id: quiz_result
+label: 'Quiz result'

@@ -1,0 +1,9 @@
+uuid: bd7aa8f6-2c47-497c-a367-a0c61d9f4541
+langcode: en
+status: true
+dependencies: {  }
+id: xue_sheng
+label: 学生
+weight: 4
+is_admin: false
+permissions: {  }
